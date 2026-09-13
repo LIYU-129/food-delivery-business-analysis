@@ -1,44 +1,44 @@
-# Findings and Actions
+# 发现与行动建议
 
-## Evidence-backed findings
+## 已验证的核心发现
 
-### 1. Short operating exception in early August
+### 1. 8 月初出现短期经营异常
 
-Daily GMV and valid orders declined together in the order-operating sample, pointing to a short-term operating exception rather than a GMV-only anomaly.
+在订单经营样本中，日度 GMV 与有效订单同步下降，表明这更像一段短期经营异常，而非仅 GMV 单项波动。
 
-**Business meaning:** check availability, operating hours, fulfilment capacity, pricing, promotions, and any platform-side disruption around the affected dates before interpreting media results alone.
+**业务含义：** 在单独解读投放结果前，应复核异常日期附近的门店营业状态、营业时间、履约能力、价格、促销，以及平台侧可能存在的扰动。
 
-### 2. July spend grew while GMV efficiency weakened
+### 2. 7 月增投但 GMV 效率走弱
 
-CPC spend in July was **64.0%** higher than in June, while GMV ROI was **19.8%** lower.
+7 月 CPC 投放费用较 6 月增长 **64.0%**，同期 GMV 投产比下降 **19.8%**。
 
-**Business meaning:** budget expansion was not accompanied by proportional transaction value. Further scaling should be conditional on the underlying driver check, not based on spend growth alone.
+**业务含义：** 预算扩张没有带来成比例的交易额回报。后续扩量应以驱动因素复核为前提，而不能只以费用增长作为依据。
 
-### 3. Budget shifted toward Meituan, while efficiency declined on both platforms
+### 3. 预算向美团迁移，但两个平台效率均下降
 
-The platform view shows a clear allocation shift toward Meituan. GMV ROI nevertheless declined on both Meituan and Ele.me.
+平台视图显示预算明显向美团侧迁移，但美团与饿了么的 GMV 投产比均下降。
 
-**Business meaning:** this is not adequately explained by a single-platform budget decision. Review each platform’s traffic cost, conversion rate, and GMV per order separately before reallocating budget.
+**业务含义：** 这不能仅归因于某一个平台的预算决策。重新分配预算前，应分别检查两平台的点击成本、下单转化率和单均 GMV。
 
-### 4. Platform efficiency losses have different mechanisms
+### 4. 两个平台的效率下降机制不同
 
-The driver view combines cost per click, order conversion rate, and GMV per order so that platform-level ROI changes can be investigated through their operational components.
+驱动视图将点击成本、下单转化率和单均 GMV 结合起来，用于定位平台投产变化背后的运营因素。
 
-**Business meaning:** avoid applying one blanket optimisation. For example, a traffic-cost problem calls for bidding/audience/placement review, whereas a conversion problem calls for offer, menu, price, store availability, and fulfilment review.
+**业务含义：** 不应采用单一的优化动作。若主因是流量成本，应复核出价、受众和资源位；若主因是转化，应复核优惠、菜单、价格、门店可营业状态与履约。
 
-### 5. Revenue is highly concentrated in a small set of stores
+### 5. 收入高度集中于少数门店
 
-The Top 5 stores contribute approximately **92.4%** of full-period GMV.
+Top5 门店贡献约 **92.4%** 的全期 GMV。
 
-**Business meaning:** prioritise diagnosis and action validation in these stores first. Use the remaining stores as a secondary watchlist, rather than spreading immediate effort evenly.
+**业务含义：** 应优先在这五家门店上完成诊断和行动验证；其余门店作为次级监控对象，而不是平均分配即时资源。
 
-## Recommended next checks
+## 建议的下一步复核
 
-1. Freeze the affected monthly and daily cuts, then reconcile platform spend, clicks, attributed GMV, valid orders, and settlement fields.
-2. For each platform, identify whether cost per click, conversion rate, or GMV per order is the dominant change; document the corresponding operational hypothesis.
-3. Review the Top 5 stores against the early-August exception dates for availability, operating hours, stock, delivery capacity, price, and campaign changes.
-4. Test budget reallocation on a controlled basis with a pre-defined success metric; do not infer incremental lift from dashboard attribution alone.
+1. 冻结异常月份与日度切片，对账平台费用、点击、归因 GMV、有效订单与结算字段。
+2. 对每个平台识别点击成本、转化率和单均 GMV 中的主要变动项，并记录对应的运营假设。
+3. 结合 8 月初异常日期，复核 Top5 门店的营业状态、营业时间、库存、配送能力、价格及活动变更。
+4. 以预先定义的成功指标开展受控预算调整测试；不要将看板归因直接视为投放增量。
 
-## Scope note
+## 范围说明
 
-The operating sample is 2020-07-28 to 2020-08-28 and the paid-media observation window is 2019-10 to 2020-08. These findings are a diagnostic portfolio case, not a claim of causal media incrementality or profitability.
+订单经营样本期为 2020-07-28 至 2020-08-28，投放观察期为 2019-10 至 2020-08。本案例是诊断型求职作品，不主张投放增量的因果结论，也不主张盈利性结论。
