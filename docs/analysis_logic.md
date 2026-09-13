@@ -1,58 +1,58 @@
-# Analysis Logic
+# 分析逻辑
 
-## Business question
+## 业务问题
 
-The project asks whether the business is achieving **healthy growth**, rather than simply whether spend or GMV is rising. The analysis therefore connects operating performance, paid acquisition efficiency, platform differences, and store priorities in one decision path.
+本项目关注的不是“投放或 GMV 有没有增长”，而是业务是否实现了**有质量的增长**。因此，分析将经营结果、投放效率、平台差异与门店优先级串联为一条可落地的诊断路径。
 
-## Diagnostic framework
+## 诊断框架
 
 ```
-Operating results
-      ↓
-Exception identification
-      ↓
-Paid-efficiency check
-      ↓
-Platform comparison
-      ↓
-Driver decomposition
-      ↓
-Store-level priorities and actions
+经营结果
+   ↓
+异常识别
+   ↓
+投放效率检验
+   ↓
+平台定位
+   ↓
+驱动拆解
+   ↓
+门店优先级与行动
 ```
 
-### 1. Start with operating results
+### 1. 先看经营结果
 
-Track daily GMV and valid orders together, then complement them with merchant receipts, average order value, and subsidy rate. This distinguishes a broad demand or fulfilment issue from an isolated reporting fluctuation.
+同步追踪日度 GMV 与有效订单，并辅以商家实收、客单价和补贴率。这能区分广泛的需求或履约问题，与仅由单一金额指标波动造成的异常。
 
-In the dashboard, the joint decline in daily GMV and valid orders highlights a short operating exception at the beginning of August.
+看板中，日度 GMV 与有效订单在 8 月初同步走低，提示存在一段短期经营异常。
 
-### 2. Test whether additional spend is working
+### 2. 检验增投是否带来有效增长
 
-Monthly CPC spend is compared with both GMV return on investment and merchant-receipt return on investment. Spend growth alone is not treated as a success: the question is whether each additional yuan continues to generate sales and merchant receipts efficiently.
+将月度 CPC 投放费用同时与 GMV 投产比、实收投产比进行比较。费用增长本身不等于成功；关键是每增加一元投放，能否持续高效地带来交易额与商家实收。
 
-This check identified the July “more spend, less efficiency” pattern: CPC spend rose from June while GMV return on investment fell.
+这一检验识别出 7 月“增投不增效”的现象：CPC 投放费用较 6 月增加，但 GMV 投产比下降。
 
-### 3. Locate the platform contribution
+### 3. 定位平台贡献
 
-Aggregate results can hide a platform shift. The analysis therefore separates Meituan and Ele.me, comparing each platform's spend allocation and return-on-investment movement. This reveals whether an efficiency change is concentrated on one platform or is common to both.
+整体结果可能掩盖平台间的预算迁移。因此，将美团与饿了么拆开，分别比较费用分配与投产效率变化，以判断效率变化是集中在单一平台，还是两个平台共同出现。
 
-### 4. Explain the efficiency change
+### 4. 解释效率下降的机制
 
-A lower platform return on investment is decomposed through three operational drivers:
+通过三个运营驱动因素拆解平台投产比下降：
 
-- cost per click, which reflects traffic acquisition cost;
-- order conversion rate, which reflects the efficiency from click to order;
-- GMV per order, which reflects the value of converted demand.
+- 点击成本：反映获取流量的单位成本；
+- 下单转化率：反映点击到有效订单的转化效率；
+- 单均 GMV：反映每笔转化订单的交易价值。
 
-The purpose is not to assign causality from a single dashboard view, but to form a testable diagnosis: different combinations of traffic cost, conversion, and order value call for different follow-up checks.
+目的不是仅凭一个看板证明因果，而是形成可验证的诊断假设：流量成本、转化和订单价值的不同组合，需要不同的后续复核。
 
-### 5. Turn evidence into priorities
+### 5. 将证据转化为优先级
 
-Finally, GMV is ranked by store. Concentrated contribution means that a limited set of stores should be reviewed first, while low-volume stores should not dominate the immediate response.
+最后按门店 GMV 排序。贡献高度集中意味着应优先复核少数关键门店，而不是平均分散即时行动。
 
-## Interpretation boundaries
+## 解读边界
 
-- The operating sample covers 2020-07-28 to 2020-08-28; the paid-media view covers 2019-10 to 2020-08.
-- Merchant receipts are not profit.
-- Platform-attributed amounts follow the platform ROI convention and are used for paid-efficiency analysis, not for a causal incrementality claim.
-- Findings indicate where to investigate and allocate attention; they do not replace controlled tests of budget, pricing, fulfilment, or promotion changes.
+- 订单经营样本期为 2020-07-28 至 2020-08-28；投放观察期为 2019-10 至 2020-08。
+- 商家实收不等于利润。
+- 平台归因金额遵循平台 ROI 口径，仅用于投放效率分析，不能据此主张投放的因果增量。
+- 结论用于定位复核重点与资源配置，不替代对预算、价格、履约或促销变化的控制实验。
