@@ -25,6 +25,12 @@
 - **驱动拆解层**：点击成本、下单转化率、单均 GMV
 - **经营落地层**：门店 GMV 贡献 Top5 + 其他
 
+## 阅读分析说明
+
+- [分析逻辑](docs/analysis_logic.md)
+- [指标定义](docs/metric_definitions.md)
+- [发现与行动建议](docs/findings_and_actions.md)
+
 ## Dashboard
 
 ![餐饮外卖经营诊断与投放效率分析](assets/dashboard_final.png)
